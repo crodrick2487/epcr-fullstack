@@ -1,0 +1,22 @@
+<h2>Create New Patient</h2>
+<form (ngSubmit)="createPatient()">
+  <label for="firstName">First Name:</label>
+  <input type="text" [(ngModel)]="patient.firstName" name="firstName" required>
+  
+  <label for="lastName">Last Name:</label>
+  <input type="text" [(ngModel)]="patient.lastName" name="lastName" required>
+
+  <label for="insuranceProvider">Insurance Provider:</label>
+  <input type="text" [(ngModel)]="patient.insuranceProvider" name="insuranceProvider" required>
+
+  <label for="policyNumber">Policy Number:</label>
+  <input type="text" [(ngModel)]="patient.policyNumber" name="policyNumber" required>
+
+  <label for="vitalSigns">Vital Signs:</label>
+  <input type="text" [(ngModel)]="patient.vitalSigns" name="vitalSigns" required>
+
+  <label for="narrative">Narrative:</label>
+  <textarea [(ngModel)]="patient.narrative" name="narrative" required></textarea>
+
+  <button type="submit">Create Patient</button>
+</form>
